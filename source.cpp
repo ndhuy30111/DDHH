@@ -17,5 +17,6 @@ int cong(int a, int b)
 }
 int nhan(int a, int b)
 {
+	cout << "My Duyen!!!!";
 	return a*b;
 }
