@@ -4,6 +4,7 @@
 #include <cstdlib>
 using namespace std;
 
+
 void nhap() {
 	int a, b;
 	cout << "Nhap a";
@@ -24,8 +25,24 @@ void RandomTong()
 	cout << b << endl;
 	cout << "Tong la: " << a + b << endl;
 }
+
+void randomhieu()
+{
+	int newnum1, newnum2, Hieu;
+	newnum1 = rand() % 100 + 1;
+	newnum2 = rand() % 100 + 1;
+	Hieu = newnum1 - newnum2;
+	cout << "So ngau nhien thu nhat la: " << newnum1 << endl;
+	cout << "So ngau nhien thu 2 la: " << newnum2 << endl;
+	cout << "Hieu 2 so la: " << Hieu << endl;
+	
+	system("pause");
+
+
+}
 int main() {
 	RandomTong();
+	randomhieu();
 	system("pause");
 	return 0;
 }
